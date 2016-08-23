@@ -51,5 +51,5 @@ If you have any question, please contact jiajunzhangwing@gmail.com.
 
 Reference:
 
-One Sentence One Model for Neural Machine Translation. Xiaoqing Li, Jiajun Zhang and Chengqing Zong. 2016.
+One Sentence One Model for Neural Machine Translation. Xiaoqing Li, Jiajun Zhang and Chengqing Zong. 2016. (Initial version is available here and Full version will be availabel in arxiv).
 EUREKA: A toolkit for training LSTM Languge Models and LSTM Encoder Decoder Models with MLE and Noise Contrastive Estimation. Ashish Vaswani. 2016.
