@@ -37,6 +37,7 @@ By default, multithreading using OpenMP is enabled. To turn it off, comment out 
 To compile:
 
 cd src
+
 make
 
 Notes:
