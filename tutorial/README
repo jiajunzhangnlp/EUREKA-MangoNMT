@@ -1,0 +1,15 @@
+Simple scripts for training and using EUREKA-MangoNMT
+
+--train a Chinese to English NMT in spoken language. The validation perplexity with attention and feed-input should be around 22.84, 24.63 without feed-input
+./train_ch2en.sh 
+
+
+--given source language sentences, generate the output sequence using beam search. NOTE: odd lines in test data are useless for decoding, they can be blank lines
+./generate_ch2en.sh lstm.s2s.z2e.decoder.best lstm.s2s.z2e.encoder.best lstm.s2s.z2e.encoder_reverse.best
+
+--given source language sentences, generate the output sequence using beam search and similar training sentences to fine-tune the NMT model (One Sentence One Model for Neural Machine Translation)
+./adapt_generate_ch2en.sh lstm.s2s.z2e.decoder.best lstm.s2s.z2e.encoder.best lstm.s2s.z2e.encoder_reverse.best
+
+
+###
+More informaiton can refer the command options in codes!
