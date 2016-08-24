@@ -1,7 +1,7 @@
 # EUREKA-MangoNMT
 A C++ toolkit for neural machine translation for CPU
 
-This toolkit extends the simple LSTM encoder-decoder (only unidirectional, no attention, no feed-input) (Stutskever et al., 2014) developed by Ashish Vaswani, in which the models can be trained with Maximum Likelihood Loss and Noise Contrastive Estimation (Gutmann and Hyvärinen, 2010). EUREKA-MangoNMT has several key new features: 1) it adds rich code comments for important classes and functions; 2) it implements the bidirectional LSTMs to encode the input sequence; 3) it implements the global attention mechanism which attends different source contexts when generating outputs in different positions; 4) it implements the feed input mechanism which links the attention output to the next decoder LSTM node; 5) it supports training data shuffle in different training epoch; 6) it implements a novel NMT framework: one sentence one model for neural machine translation.
+This toolkit extends the simple LSTM encoder-decoder (only unidirectional, no attention, no feed-input) (Stutskever et al., 2014) developed by Ashish Vaswani, in which the models can be trained with Maximum Likelihood Loss and Noise Contrastive Estimation (Gutmann and Hyvärinen, 2010). EUREKA-MangoNMT has several key new features: 1) it adds rich code comments for important classes and functions; 2) it implements the bidirectional LSTMs to encode the input sequence; 3) it implements the global attention mechanism which attends different source contexts when generating outputs in different positions; 4) it implements the feed input mechanism which links the attention output to the next decoder LSTM node; 5) it supports training data shuffle in different training epoch; 6) it implements a novel NMT framework: one sentence one model for neural machine translation. All the new features are implemented by Jiajun Zhang.
 
 About the translation performance:
 EUREKA-MangoNMT can obtain the similar translation performance to the Theano-based DL4MT.
@@ -47,7 +47,7 @@ More details about the attention-based NMT (with bidirectional LSTM encoding and
 
 For examples on how to use code, please look at the tutorial/README file. 
 
-If you have any question, please contact jiajunzhangwing@gmail.com.
+If you have any question about attention model, feed input and other new features, please contact jiajunzhangwing@gmail.com.
 
 Reference:
 
