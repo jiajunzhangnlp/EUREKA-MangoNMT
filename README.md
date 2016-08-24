@@ -20,7 +20,7 @@ A C++ compiler and GNU make
 
 Boost 1.47.0 or later http://www.boost.org
 
-Eigen 3.1.x http://eigen.tuxfamily.org
+Eigen 3.1.x http://eigen.tuxfamily.org (you can use the Eigen we provide in 3rdparty, different Eigen version may cause runtime error)
 
 Optional (best to have):
 
