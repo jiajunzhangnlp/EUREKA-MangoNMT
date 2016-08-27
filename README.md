@@ -7,7 +7,7 @@ About the translation performance:
 EUREKA-MangoNMT can obtain the similar translation performance to the Theano-based DL4MT.
 
 About the training time:
-It highly depends on the power of the CPU you use. In our experiments using 24 threads on Intel(R) Xeon(R) CPU E5-2690 @ 2.90GHz, it takes about one week to training the NMT model on about 700k LDC parallel sentence pairs. In this experiments, the input embedding and encoding hidden dimension are set 256, while the output embedding and decoding hidden dimension are set 512. It is slightly slower than Theano-based DL4MT using GPUs.
+It highly depends on the power of the CPU you use. In our experiments using 24 threads on Intel(R) Xeon(R) CPU E5-2690 @ 2.90GHz, it takes about one week to training the NMT model on about 700k LDC parallel sentence pairs. In this experiments, the vocabulary size is set 30,000 on both source and target sides, the input embedding and encoding hidden dimension are set 256, while the output embedding and decoding hidden dimension are set 512. It is slightly slower than Theano-based DL4MT using GPUs.
 
 
 Tips for compile:
@@ -20,7 +20,7 @@ A C++ compiler and GNU make
 
 Boost 1.47.0 or later http://www.boost.org
 
-Eigen 3.1.x http://eigen.tuxfamily.org (you can use the Eigen we provide in 3rdparty, different Eigen version may cause runtime error)
+Eigen 3.1.x http://eigen.tuxfamily.org (you can use the Eigen we provide in 3rdparty, different Eigen version may cause runtime error. If you find runtime error, you should check whether Eigen works well in your system.)
 
 Optional (best to have):
 
@@ -41,7 +41,7 @@ cd src
 make
 
 Notes:
-It is tested on Ubuntu server.
+It is tested on Ubuntu server. More threads lead to more efficient training.
 
 More details about the attention-based NMT (with bidirectional LSTM encoding and feed-input), the relationship between codes and NMT model, see EUREKA-MangoNMT.pdf.
 
