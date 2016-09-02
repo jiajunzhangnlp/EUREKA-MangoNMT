@@ -115,6 +115,8 @@ public:
 		int inserted = 0;
 		insert_word("<unk>"); //infrequent words are all mapped to <unk>
 		inserted++;
+		unk = m_index["<unk>"];
+		unk_defined = 1;
 		while (size() < vocab_size && !q.empty())
 		{
 			insert_word(q.top().first);
