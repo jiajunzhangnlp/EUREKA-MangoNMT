@@ -396,7 +396,7 @@ void model::read(const string &filename, vector<string> &input_words, vector<str
 		W_h_to_atten.read_weights(file);
 	else if (line == "\\W_ctx_to_atten")
 		W_ctx_to_atten.read_weights(file);
-	else if (line == "\\attention_bias")
+	else if (line == "\\attention_biases")
 		atten_t.read_biases(file);
 	else if (line == "\\input_gate_biases")
 	    i_t.read_biases(file);	
